@@ -4,13 +4,12 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class SQRServiceTest {
+public class SQRServiceTest {
 
     @Test
-    void shouldCalculeteRangeOfSquaresOfNumbers() {
+    void shouldCalculateRangeOfSquaresOfNumbers() {
         SQRService service = new SQRService();
-
-        int actual = service.calculete(200, 300);
+        int actual = service.calculate(200, 300);
         int expected = 3;
 
         assertEquals(expected, actual);
